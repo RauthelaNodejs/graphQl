@@ -1,0 +1,36 @@
+create new user
+mutation {
+  createUser(name: "John Doe", email: "john.doe@example.com", password: "securepassword123") {
+    id
+    name
+    email
+  }
+}
+
+for update user 
+mutation {
+  updateUser(id: "665b5d4159bdea753b6d6820", name: "Jane don ", email: "jane.doe@example2.com", password: "newsecurepassword456456") {
+    id
+    name
+    email
+  }
+}
+
+for get user by id 
+query{
+  getUser(id :"665b5d4159bdea753b6d6820"){
+    name,
+    email
+  }
+}
+
+
+get all user
+
+query {
+  getUsers {
+    id
+    name
+    email
+  }
+}
